@@ -1,0 +1,8 @@
+<form>
+    <input type="text" name="name" [(ngModel)]="model.name" placeholder="rider name" />
+    <br>
+    <input type="number" name="lat" [(ngModel)]="model.lat" placeholder="lat" />
+    <input type="number" name="lng" [(ngModel)]="model.lng" placeholder="lng" />
+    <br>
+    <input type="button" value="Add Rider" (click)="addRider($event)" />
+</form>
