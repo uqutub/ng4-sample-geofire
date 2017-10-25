@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './root/app.component';
 import { MapComponent } from './map/map';
 import { AddRiderComponent } from './add-rider/add-rider';
+import { BookRiderComponent } from './book-rider/book-rider';
 
 import { FirebaseService } from './service/firebase';
 
@@ -25,7 +26,8 @@ firebase.initializeApp({
   declarations: [
     AppComponent,
     MapComponent,
-    AddRiderComponent
+    AddRiderComponent,
+    BookRiderComponent
   ],
   imports: [
     BrowserModule,

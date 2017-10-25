@@ -1,0 +1,3 @@
+<div>
+    <input type="button" *ngFor="let item of bookedRiders; let i = index;" [value]=" (item.status) ? 'Dropped ' + i : 'Book Rider ' + i" (click)="bookRider(i, $event)" />
+</div>

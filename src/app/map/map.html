@@ -1,7 +1,7 @@
 <div>
 
-    <agm-map [latitude]="center.lat" [longitude]="center.lng">
-        <agm-marker *ngFor="let loc of ridersLocation" [latitude]="loc.location[0]" [longitude]="loc.location[1]"></agm-marker>
+    <agm-map [latitude]="center.lat" [longitude]="center.lng" [zoom]="15">
+        <agm-marker *ngFor="let loc of ridersLocation" [label]="loc.name" [latitude]="loc.location[0]" [longitude]="loc.location[1]"></agm-marker>
     </agm-map>
 
 </div>
